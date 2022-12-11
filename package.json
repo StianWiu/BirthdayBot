@@ -1,0 +1,28 @@
+{
+  "name": "birthdaybot",
+  "version": "1.0.0",
+  "description": "Discord bot that will keep track of and announce birthdays. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StianWiu/BirthdayBot.git"
+  },
+  "keywords": [
+    "Birthday",
+    "Bot"
+  ],
+  "author": "StianWiu (Pignuuu)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/StianWiu/BirthdayBot/issues"
+  },
+  "homepage": "https://github.com/StianWiu/BirthdayBot#readme",
+  "dependencies": {
+    "discord.js": "^14.7.1",
+    "node-schedule": "^2.1.0",
+    "simpl.db": "^2.12.1"
+  }
+}
