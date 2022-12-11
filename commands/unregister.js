@@ -14,7 +14,7 @@ module.exports = {
         tabSize: 2,
       }
       const db = new Database(config);
-      db.delete(`${database.interaction.guild.id}.birthdays.${interaction.user.id}`);
+      db.delete(`database.${interaction.guild.id}.birthdays.${interaction.user.id}`);
       await interaction.reply({ content: `You have been wiped from the birthday registry.`, ephemeral: true });
     } else {
       await interaction.reply({ content: `Nothing was changed`, ephemeral: true });

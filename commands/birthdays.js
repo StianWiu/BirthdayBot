@@ -12,7 +12,7 @@ module.exports = {
     }
     const db = new Database(config);
 
-    const birthdays = db.get(`${database.interaction.guild.id}.birthdays`);
+    const birthdays = db.get(`database.${interaction.guild.id}.birthdays`);
     // If there are no birthdays
     if (!birthdays) {
       const embed = new EmbedBuilder()
@@ -25,7 +25,7 @@ module.exports = {
       // Loop through all birthdays and calculate the days until the next birthday
       const birthdaysArray = [];
       for (user in birthdays) {
-        const person = db.get(`${database.interaction.guild.id}.birthdays.${user}`)
+        const person = db.get(`database.${interaction.guild.id}.birthdays.${user}`)
 
         const year = person.year
         const month = person.month

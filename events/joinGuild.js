@@ -9,7 +9,7 @@ module.exports = {
       tabSize: 2,
     }
     const db = new Database(config);
-    db.set(`${database.interaction.id}.settings`, {
+    db.set(`database.${interaction.id}.settings`, {
       enabled: false,
       birthdayRole: false,
       birthdayChannel: false,
