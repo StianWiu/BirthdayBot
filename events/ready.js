@@ -25,8 +25,8 @@ module.exports = {
     // Every day at 8:00 PM (GMT+1) check for birthdays
     const schedule = require('node-schedule');
     const rule = new schedule.RecurrenceRule();
-    rule.hour = 21;
-    rule.minute = 51;
+    rule.hour = 4;
+    rule.minute = 0;
     rule.tz = 'Europe/Berlin';
     schedule.scheduleJob(rule, async () => {
       // Get all guilds from the database
